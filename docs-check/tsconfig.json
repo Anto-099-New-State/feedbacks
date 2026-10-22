@@ -1,0 +1,2 @@
+{ "compilerOptions": { "target":"es2022","module":"nodenext","moduleResolution":"nodenext","strict":true,"noEmit":true,"skipLibCheck":true,"types":[],"jsx":"react-jsx" },
+  "include": ["prelude.d.ts","wrap/*.tsx"] }

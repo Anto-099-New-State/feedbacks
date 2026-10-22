@@ -1,0 +1,22 @@
+{
+  "name": "dreamdex-perps-feedback",
+  "private": true,
+  "type": "module",
+  "description": "Feedback reports for the dreamDEX Perps Builder Bounty (DoraHacks), feedback track.",
+  "scripts": {
+    "repro:01": "node repro/01-list-position-analytics-phantom-rows.mjs",
+    "repro:02": "tsx repro/02-guard-dies-on-one-stale-feed.mts",
+    "check:docs": "node docs-check/check-docs.mjs PERPS",
+    "check:docs:all": "node docs-check/check-docs.mjs",
+    "live": "tsx live/collect-evidence.mts"
+  },
+  "dependencies": {
+    "@somnia-chain/markets-sdk": "0.32.1",
+    "viem": "^2"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "tsx": "^4",
+    "typescript": "^5.9"
+  }
+}
